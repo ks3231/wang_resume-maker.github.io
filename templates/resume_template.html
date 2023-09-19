@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{name}}'s Resume</title>
+</head>
+     <style>
+        
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Mooli&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    
+    background: rgb(188, 182, 182);
+    
+   
+
+}
+
+.resume {
+    display: flex;
+    justify-content: flex-start;
+    margin:1vh 20vw;
+    width: 60vw;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+
+/* .sidebar{
+
+    width: 30%;
+    min-height: 100vh;
+    background-color: rgb(0, 163, 163);
+    overflow: hidden;
+    color: white;
+   
+} */
+
+
+.name {
+    text-align: center;
+    margin: 3px 6px;
+   
+    padding: 2px;
+    font-size: 30px;
+
+    font-weight:bolder;
+    font-family: 'Mooli', sans-serif;
+   
+}
+
+.contact-section h2{
+    width: 100%;
+    background-color: rgb(3, 112, 112);
+    padding: 3px;
+    margin-left: 0;
+    text-align: left;
+
+}
+
+.contact {
+    display: flex;
+    margin:3px 10px;
+    font-size: 16px;
+  
+
+}
+.contact p {
+    font-size: large;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Mooli', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.main{
+    margin: 7px;
+    width: 100%;
+    color: black;
+}
+
+.summary-section h2{
+    width: 100%;
+    background-color: rgb(3, 112, 112);
+    padding: 3px;
+    margin-left: 0;
+    text-align: left;
+}
+.summary-section p{
+    font-size: large;
+    margin: 0px 12px;
+    overflow-wrap: break-word;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Mooli', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.summary-section h4, p{
+    display: inline;
+   margin-top: 3px;
+}
+
+
+li{
+    margin-left: 23px;
+    font-size: large;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Mooli', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+h4{
+    display: inline;
+}
+
+
+
+    </style>
+
+
+<body>
+<div class="resume">
+    <div class="sidebar">
+        <div class="name">{{name}}</div>
+        <div class="contact-section">
+            <div><h2>Contact</h2></div>
+         <div class="contact">
+         <div class="email"><p>Email:</p> {{email}} </div>
+         <div class="phone"><p>Phone:</p>{{phone}}</div>
+         </div>
+        </div>
+
+        <div class="contact-section">
+            <div><h2>Skills</h2></div>
+         <div class="contact">
+            <li>{{skill1}}</li>
+                <li>{{skill2}}</li>
+                    <li>{{skill3}}</li>
+         </div>
+        </div>
+        <div class="contact-section">
+            <div><h2>Languages</h2></div>
+         <div class="contact">
+            <li>{{lan1}}</li>
+                <li>{{lan2}}</li>
+                    <li>{{lan3}}</li>
+         </div>
+        </div>    
+    </div> 
+    <div class="main">
+       <div class="summary-section">
+          
+          <h2>Summary:-</h2>
+          
+          <p class="summary">{{sum}}</p>
+       </div>
+
+       <div class="summary-section" >
+          
+          <h2>Education :-</h2>
+          
+          <em><h4>{{year1}}:</h4></em> <p>{{edu}}</p><br>
+          <em><h4>{{year2}}:</h4></em> <p>{{edu1}}</p><br>
+          <em><h4>{{year3}}:</h4></em> <p>{{edu2}}</p><br>
+          
+       </div>
+       <div class="summary-section">
+          
+          <h2>Work History :- </h2>
+          
+          <em><h4>{{from1}} To {{to1}}:</h4></em><p>{{exp1}}</p><br>
+          <em><h4>{{from1}} To {{to2}}:</h4></em><p>{{exp2}}</p><br>
+          <em><h4>{{from1}} To {{to3}}:</h4></em><p>{{exp3}}</p><br>
+       
+       </div>
+       <div class="summary-section">
+          
+          <h2>Projects :-</h2>
+          
+         <li> {{project1}}</li>
+         <li>{{project2}}</li>
+         <li>{{project3}}</li>
+       </div>
+    </div>
+    
+</div>
+</body>
+</html>
+
+  
+
+   
+
